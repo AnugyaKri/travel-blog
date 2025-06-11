@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <h2 class="mb-4">Explore Destinations</h2>
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let destination of destinations">
+      <div class="card h-100">
+        <img [src]="destination.img" class="card-img-top" alt="{{ destination.name }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ destination.name }}</h5>
+          <p class="card-text">Price: ${{ destination.price }}</p>
+          <button class="btn btn-primary" >Book Now</button>
+          <!--(click)="bookNow(destination)"-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

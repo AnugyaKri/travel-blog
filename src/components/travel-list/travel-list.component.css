@@ -1,0 +1,33 @@
+/* For the whole body */
+body {
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* For the container wrapping the cards */
+  .container.my-5 {
+    background: #ffffff; /* Light background for the cards section */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* For the navbar */
+  .navbar {
+    background: rgba(0, 0, 0, 0.8); /* Transparent black */
+  }
+  
+  .navbar-brand {
+   
+    font-size: 1.5rem;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #ffffff;
+  }
+  

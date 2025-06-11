@@ -1,0 +1,100 @@
+<div class="container-fluid p-0">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" >Travel Blog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/login">LoginAdmin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/loginuser">LoginUser</a>
+            </li>
+          <!--  <li class="nav-item">
+              <a class="nav-link" routerLink="/customer-dashboard">Dashboard</a>
+            </li>-->
+            <li class="nav-item">
+              <button (click)="logout()">Logout</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+    <!-- Hero Section -->
+    <div class="hero-section bg-dark text-white text-center py-5">
+      <h1 class="display-4">Welcome to Travel Blog</h1>
+      <p class="lead">Your journey to inspiration, tips, and hidden gems starts here!</p>
+    </div>
+  
+    <!-- Introduction Section -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2>Discover the World One Destination at a Time</h2>
+          <p class="mt-3">
+            We're passionate travelers who love sharing stories, tips, and the beauty of new places. Whether you're a seasoned globetrotter or planning your first adventure, you'll find something here to spark your wanderlust.
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Featured Posts Section -->
+    <div id="featured-posts" class="container my-5">
+      <h3 class="text-center mb-4">Featured Posts</h3>
+      <div class="row g-4">
+        <!-- Post Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="card-img-top" alt="Beach Paradise">
+            <div class="card-body">
+              <h5 class="card-title">Exploring Beach Paradises</h5>
+              <p class="card-text">Discover the world's most stunning beaches and coastal retreats.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Post Card 2 -->
+       <div class="col-md-4">
+  <div class="card h-100">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/30/c2/b8/urban-adventure.jpg?w=1200&h=-1&s=1" class="card-img-top" alt="City Adventures" style="object-fit: cover; height: 275px;">
+    <div class="card-body">
+      <h5 class="card-title">Urban Adventures Await</h5>
+      <p class="card-text">Explore vibrant cities and discover their hidden secrets.</p>
+    </div>
+  </div>
+</div>
+  
+        <!-- Post Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" class="card-img-top" alt="Mountain Escapes">
+            <div class="card-body">
+              <h5 class="card-title">Mountain Escapes</h5>
+              <p class="card-text">Find serenity and adventure in the world's most beautiful mountains.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Call to Action -->
+    <div class="bg-primary text-white text-center py-4">
+      <h3>Ready to Embark on Your Next Adventure?</h3>
+      <div class="contact-info mt-5">
+        <h5 class="text-center mb-3">Contact Information</h5>
+        <ul class="list-unstyled text-center">
+          <li><i class="bi bi-telephone"></i> Phone: +1 (555) 123-4567</li>
+          <li><i class="bi bi-geo-alt"></i> Location: 123 Adventure St, Wanderlust City</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bootstrap JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
